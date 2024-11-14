@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluacion</title>
+    <style>
+
+        /*posicionamiento y estilos para la pagina*/
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+        
+        /*contenedor de la pagina*/
+        .box {
+            width: 400px;
+            height: 500px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-style: solid;
+            border-color: rgb(118, 51, 206);
+        }
+        
+        /*selector universal*/
+        * {
+            box-sizing: border-box;
+        }
+        
+        /*caja para la imagen ".writing-person"*/
+        .image-box {
+            position: relative;
+            width: 100%;
+            padding-top: 75%;
+            overflow: hidden;
+        }
+        
+        /*posicion y tamaño de la imagen*/
+        .writing-person {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            width: 95%;
+            height: 95%;
+            object-fit: contain;
+        }
+        
+        /*de momento no hace nada*/
+        .Text-Container {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+        }
+        
+        /*posicion de marca azul*/
+        .check-mark {
+            position: absolute;
+            right: 25px;
+            bottom: 270px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        
+        /*tamaño de la tilde azul*/
+        .check-mark img {
+            width: 40px;
+            height: 40px;
+        }
+        
+        /*posicionamiento caja blue*/
+        .natural-administration {
+            position: absolute;
+            top: 150px;
+            left: 25px;
+            background-color: transparent;
+            color: white;
+            padding: 4px 4px;
+            font-weight: bold;
+
+        }
+        
+        /*posicionamiento de la caja blue-box*/
+        .blue {
+            font-size: 22px;
+            padding: 4px;
+            margin: 0px;
+        }
+        
+        /*estilos de administracion*/
+        .blue-box { 
+            font-size: 20px;
+            margin: 0px;
+            padding: 0px;
+            color: black;
+
+        }
+        
+        /*caja para "licenciatura de NQ"*/
+        .blue-box2 {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            background-color: rgb(21, 103, 197);
+            font-size: 10px;
+            margin: 0px;
+            padding: 0px;
+            width: 90px;
+        }
+
+        .box-for-images-tilde{
+            display: flex;
+            position: absolute;
+            left: 10px;
+            bottom: 80px;
+            padding: 5px;
+        }
+
+        .box-for-images-pinguino{
+            display: flex;
+            position: absolute;
+            left: 10px;
+            bottom: 150px;
+            padding: 5px;
+
+        }
+
+        .text-for-penguin1{
+            position: absolute;
+            left: 40px;
+            bottom: 170px;
+            background-color: transparent;
+            color: white;
+            padding: 4px 4px;
+            font-weight: bold;
+        }
+        .text-for-penguin2 {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            background-color: transparent;
+            font-size: 14px;
+            margin: 0px;
+            padding: 0px;
+            width: 300px;
+            color: rgb(43, 125, 231);
+        }
+        
+        .text-for-penguin3 {
+            font-size: 10px;
+            margin: 0px;
+            padding: 0px;
+            color: black;
+            position: absolute;
+            left: 90px;
+            bottom: 135px;
+        }
+        
+        .text-for-tilde1{
+            position: absolute;
+            left: 20px;
+            bottom: 120px;
+            background-color: transparent;
+            color: white;
+            padding: 4px 4px;
+            font-weight: bold;
+        }
+        .text-for-tilde2 {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            background-color: transparent;
+            font-size: 14px;
+            margin: 0px;
+            padding: 0px;
+            width: 300px;
+            color: rgb(43, 125, 231);
+        }
+        
+        .text-for-tilde3 {
+            font-size: 10px;
+            margin: 0px;
+            padding: 0px;
+            color: black;
+            position: absolute;
+            left: 90px;
+            bottom: 85px;
+        }
+
+        .penguin{
+            display: flex;
+    
+        }
+        .tilde{
+            display: flex;
+           
+        }
+        
+
+        .redsoc {
+            background-color: rgb(94, 94, 238) ;
+            color: white;
+            border-radius:30px ;
+            position: fixed;
+            bottom: 15px;
+            left: 15px;
+            padding: 5px;
+            font-size: 15px;
+            height: 40px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="image-box">
+            <img src="escribiendo.jpg" alt="escribiendo" class="writing-person">
+        </div>
+        <div>
+            <button class="check-mark">
+                <img src="correct.jpg" alt="check-mark">
+            </button>
+        </div>
+        <div class="natural-administration">
+            <p class="blue-box2">Licenciatura NQ</p>
+            <div class="blue">
+                <p class="blue-box">Administracion De</p>
+                <p class="blue-box">Areas Multiples</p>
+            </div>
+        </div>
+        <div class="box-for-images-pinguino">
+           <img src="penguin.jpg" alt="pinguino" width="60px" class="penguin">
+        </div>
+        <div class="box-for-images-tilde">
+           <img src="correct.jpg" alt="correct" width="60px" class="tilde">
+        </div>
+        <div class="text-for-penguin1">
+            <p class="text-for-penguin2">Lic. en administracion de areas <br> Naturales </p>
+        </div>
+        <div class="text-for-penguin3">
+            <p class="text-for-penguin4">Presencial Pto.Maydyn <br> duracion 5 años</p>
+        </div>
+        <div class="text-for-tilde1">
+            <p class="text-for-tilde2">Tec Univ. Guardaparques </p>
+        </div>
+        <div class="text-for-tilde3">
+            <p class="text-for-penguin4">Presencial Pto.Maydyn <br> duracion 5 años</p>
+        </div>
+    </div>
+    <div class="redsoc">
+        <p><img src="mail.jpg" alt="WhatsApp" class="whats" width="15px">    Contactar    </p>
+    </div>
+</body>
+</html>
